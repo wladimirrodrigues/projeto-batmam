@@ -1,0 +1,231 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kdam+Thmor+Pro&family=Merriweather:wght@700;900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  list-style: none;
+  text-decoration: none;
+}
+
+header{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 50px;
+}
+
+nav{
+  width: 60%;
+}
+
+ul{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+li{
+  list-style: none;
+  color: white;
+  cursor: pointer;
+  font-size: 19px;
+  transition: .5s;
+  font-family: 'kdam Thmor Pro', sans-serif;
+}
+li:hover{
+  color: red;
+}
+#logo{
+  width: 150px;
+  height: 100px;
+  margin-left: 30px;
+}
+#banner{
+  background-image: url('https://preview.redd.it/6092ltrt8nt71.jpg?auto=webp&s=c26d698d5d92796be9c6ab47f22dba63a7be96c3');
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+#trailer-container{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+.content{
+  width: 1100px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.trailer{
+  width: 50%;
+}
+#sinopse{
+  display: block;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+.descricao{
+  color: #fff;
+  font-size: 16px;
+  font-family: 'kdam Thmor Pro', sans-serif;
+  width: 70%;
+}
+.butao{
+  width: 200px;
+  height: 60px;
+  margin-top: 15px;
+  background-color: red;
+  color: #fff;
+  padding: 8px 10px;
+  border: 5px;
+  cursor: pointer;
+  transition: .8s;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+  margin-top: 25px;
+}
+.butao:hover{
+  background-color: #fff;
+  color: #000;
+}
+.actor-cards-containe{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cards-costent{
+  width: 90%;
+  margin: auto;
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 40px;
+}
+.card{
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding:0 0 20px 10px ;
+  color: #fff;
+  font-size: 17px;
+  font-family: 'kdam Thmor Pro', sans-serif;
+}
+.card:hover{
+  transform: scale(1.02);
+}
+.banner-1{
+  background-image: url(https://www.amica.it/wp-content/wp-content/gallery/robert-pattinson/AMICARCS_20220209173237432_d2612acf88d48e9b8277c43749b58a56.jpg);
+}
+.banner-2{
+  background-image: url(https://festivalteen.com.br/wp-content/uploads/2020/06/ZOE-KRAVITZ.jpg);
+}
+.banner-3{
+  background-image: url(https://www.caa.com/caaspeakers/partyHeadshot/jeffrey-wright.png);
+}
+footer {
+  margin-top: 50px;
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+span{
+  color: #fff;
+  font-family: 'kdam Thmor Pro', sans-serif;
+}
+.footer-navigation{
+  display: none;
+}
+.footer-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media(max-width:770px){
+  nav{
+    display: none;
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+  }
+  #logo{
+    margin-top: 50px;
+  }
+  #banner{
+    background-position: 65%;
+    margin-bottom: 100px;
+  }
+  #trailer-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  .content{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+    .trailer{
+      width: 100%;
+      margin-left: 30px;
+    }
+    #sinopse{
+      width:95%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .descricao{
+      width: 100%;
+    }
+    .butao{
+      width: 60%;
+      align-self: center;
+      margin-top: 30px;
+      align-items: center;
+    }
+    .cards-costent{
+      grid-template-columns: 1fr;
+    }
+    .card{
+      box-shadow: 6px 6px 15px rgba(255, 0, 0, 0.788);
+      margin-top: 50px;
+      margin-bottom: 15px;
+    }
+
+  .footer-list{
+    margin-bottom: 30px;
+  }  
+  .footer-navigation{
+    display: block;
+  }
+  .footer-list a, span{
+    margin-top: 10px;
+  }
+}

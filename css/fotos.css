@@ -1,0 +1,139 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kdam+Thmor+Pro&family=Merriweather:wght@700;900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  list-style: none;
+  text-decoration: none;
+}
+
+header{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 50px;
+}
+
+nav{
+  width: 60%;
+}
+ul{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#logo{
+  width: 150px;
+  height: auto;
+  margin-left: 20px;
+}
+li{
+  list-style: none;
+  color: white;
+  cursor: pointer;
+  font-size: 19px;
+  transition: .5s;
+  font-family: 'kdam Thmor Pro', sans-serif;
+}
+li:hover{
+  color: red;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.slider{
+  margin: 0 auto;
+  height: 400px;
+  width: 800px;
+  overflow: hidden;
+}
+.slides{
+  width: 450%;
+  height: 400px;
+  display: flex;
+}
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 25%;
+  position: relative;
+}
+.slide img{
+  width: 800px;
+}
+.manual-navegacao{
+  position: absolute;
+  width: 780px;  
+  margin-top: 420px;
+  display: flex;
+  justify-content: center;
+}
+.manual-btn{
+  border: 2px solid #fff;
+  padding: 5px;
+  margin: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0,1s;
+}
+.manual-btn:hover{
+  background: #fff;
+}
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -24%;
+}
+#radio3:checked ~ .first{
+  margin-left: -51%;
+}
+#radio4:checked ~ .first{
+  margin-left: -75%;
+}
+#radio5:checked ~ .first{
+  margin-left: -100%;
+}
+#radio6:checked ~ .first{
+  margin-left: -125%;
+}
+.navegacao-auto div{
+  border: 2px solid rgba(255, 0, 0, 0.795);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.navegacao-auto{
+  position: absolute;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  margin-top: 440px;
+}
+.navegacao-auto div:not(:last-child){
+  margin-right: 20px;
+}
+footer img{
+  margin-top: 70PX;
+}
+@media(max-width: 840px){
+  .slider{
+    width: 500px;
+    height: 300px;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}

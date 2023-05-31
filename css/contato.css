@@ -1,0 +1,183 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  list-style: none;
+  text-decoration: none;
+}
+
+header{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 50px;
+}
+
+nav{
+  width: 60%;
+}
+ul{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+li{
+  list-style: none;
+  color: white;
+  cursor: pointer;
+  font-size: 19px;
+  transition: .5s;
+  font-family: 'kdam Thmor Pro', sans-serif;
+}
+li:hover{
+  color: red;
+}
+#logo{
+  width: 150px;
+  height: auto;
+  margin-left: 20px;
+}
+.contato{
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contato-dados, .contato-formulario{
+    margin-top: 50px;
+    margin-left:20px ;
+    background-color: rgb(250, 250, 250);
+    padding: 60px;
+    border-radius: 5px;
+}
+a{
+  background-color: rgb(250, 250, 250);
+  text-decoration: none;
+  color: inherit;
+}
+.contato-endereco {
+    background-color: rgb(250, 250, 250);
+    margin-bottom: 32px;
+    padding-left: 28px;
+    background: url(/img/local.svg) no-repeat 0px 2px;
+}
+.contato-dados h2{
+  background-color: rgb(250, 250, 250);
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.contato-endereco p{
+  font-weight: bolder;
+  background-color: rgb(250, 250, 250);
+  margin-bottom: 8px;
+}
+.contato-meios a{
+  font-weight: bolder;
+}
+.contato-meios a:nth-child(1) {
+  background: url(/img/email.svg) no-repeat 0px 2px;
+}
+.contato-meios a:nth-child(2) {
+  margin-bottom: 10px;
+}
+.contato-meios a:nth-child(3) {
+  margin-bottom: 30px;
+  background: url(/img/telefone.svg) no-repeat 0px 2px;
+} 
+.contato-meios a {
+  color: #000;
+  display: block;
+  max-width: max-content;
+  margin-bottom: 8px;
+  padding-left: 28px;
+}
+.contato-meios{
+  background-color: rgb(250, 250, 250);
+}
+.contato-redes{
+  background-color: rgb(250, 250, 250);
+   display: flex;
+   gap: 32px;
+   padding-left: 28px
+}
+.contato-redes a{
+  text-decoration: none;
+  color: inherit;
+}
+.contato-redes img{
+  background-color: rgb(250, 250, 250);
+}
+form{
+  background-color: rgb(250, 250, 250);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+form div {
+  background-color: rgb(250, 250, 250);
+  display: block;
+}
+form label {
+  background-color: rgb(250, 250, 250);
+  color: #000;
+  font-weight: bolder;
+  display: block;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form input[type="text"], .form input[type="email"], .form textarea {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.botao {
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(#f80404cc, #fc1403);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  text-transform: uppercase;
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+}
+.botao:hover{
+  color: white;
+}
+@media (max-width: 800px) {
+  header{
+    
+  }
+  .contato {
+    grid-template-columns: 1fr;
+  }
+  .contato-dados,
+  .contato-formulario {
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .contato-dados h2 {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .contato-meios a:nth-child(3) {
+    margin-bottom: 32px;
+  }
+  .contato-redes {
+    margin-bottom: 12px;
+  }
+}
+
